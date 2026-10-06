@@ -12,5 +12,5 @@ setTimeout(() => {
   a.use("/community", p(3002));
   a.use("/api/posts", p(3002));
   a.use("/", p(3000));
-  a.listen(8080, () => console.log("\n🚀 المنصة الموحّدة: http://localhost:8080\n"));
+  a.listen(process.env.PORT || 8080, () => console.log("\n🚀 المنصة الموحّدة: http://localhost:8080\n"));
 }, 3000);
